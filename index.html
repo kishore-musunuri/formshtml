@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant</title>
+</head>
+<body>
+
+    <form onsubmit="showMenu(); return false;">
+        <label>Username</label>
+        <input type="text" required><br><br>
+
+        <label>Password</label>
+        <input type="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Hidden menu -->
+    <div id="menu" style="display:none;">
+
+        <h1>Kishore's Food Home</h1>
+
+        <h2>Non Veg</h2>
+        <ol>
+            <li>Chicken Half</li>
+            <li>Chicken Full</li>
+            <li>Mutton Biryani Full</li>
+            <li>Mutton Half</li>
+            <li>Mixed Biryani</li>
+        </ol>
+
+        <h2>Veg</h2>
+        <ul>
+            <li>Mushroom Biryani</li>
+            <li>Paneer Biryani</li>
+            <li>Veg Pulav</li>
+            <li>Kaju Biryani</li>
+        </ul>
+
+    </div>
+
+    <script>
+        function showMenu() {
+            document.getElementById("menu").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
